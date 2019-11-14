@@ -1,5 +1,5 @@
 ---
-title: Trey
+title: Trey White
 banner:
   actions:
     - is_primary: true
@@ -11,8 +11,8 @@ banner:
     is_scrolly: true
     label: Learn More
     url: '#one'
-  subtitle: You've just created your own web app!
-  title: You did it!
+  subtitle: Full-stack web developer
+  title: Trey White
 sections:
   - background_style: style1
     component: Icons
@@ -122,10 +122,12 @@ sections:
       eleifend fringilla.
     title: Arcue ut vel commodo
     type: cta
+template: home
+---
+
+<!---
 menus:
   main:
     title: Home
     weight: 1
-template: home
----
-
+-->
