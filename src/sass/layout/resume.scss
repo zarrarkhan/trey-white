@@ -1,0 +1,23 @@
+/* Resume */
+
+#resume {
+    color: 'green';
+
+    .pull-right {
+        float: right;
+    }
+
+    ul.section-list {
+        & details summary span {
+            padding-left: 0.6em;
+        }
+
+        & details li {
+            margin-left: 2.5em;
+        }
+
+        & li { 
+            margin-left: 1.2em;
+        }
+    }
+}

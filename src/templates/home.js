@@ -12,7 +12,13 @@ export default class Home extends React.Component {
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections'), (section, section_idx) => {
                     let GetSectionComponent = components[_.get(section, 'component')];
                     return (
-                        <GetSectionComponent key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} page={this.props.pageContext} />
+                        <GetSectionComponent
+                            key={section_idx}
+                            {...this.props}
+                            section={section}
+                            site={this.props.pageContext.site}
+                            page={this.props.pageContext}
+                        />
                     )
                 })}
             </Layout>

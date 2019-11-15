@@ -6,6 +6,7 @@ import Header from './Header';
 import Icons from './Icons';
 import Spotlights from './Spotlights';
 import Layout from './Layout';
+import ResumeSection from './ResumeSection';
 
 export {
     Banner,
@@ -15,7 +16,8 @@ export {
     Header,
     Icons,
     Spotlights,
-    Layout
+    Layout,
+    ResumeSection
 };
 
 export default {
@@ -26,5 +28,6 @@ export default {
     Header,
     Icons,
     Spotlights,
-    Layout
+    Layout,
+    ResumeSection
 };
