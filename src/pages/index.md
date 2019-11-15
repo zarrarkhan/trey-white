@@ -4,8 +4,10 @@ banner:
   actions:
     - is_primary: true
       is_scrolly: false
-      label: Activate
-      url: /generic
+      label: Resume
+      url: https://res.cloudinary.com/realnumberz/image/upload/v1573783055/uploads/Paul_White_-_Resume_v6.pdf
+      download: true
+      target: _blank
   bottom_link:
     has_arrow: true
     is_scrolly: true
