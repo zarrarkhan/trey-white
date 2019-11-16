@@ -2,7 +2,7 @@ import React from 'react';
 import get from 'lodash/get';
 import map from 'lodash/map';
 
-import {Layout, ResumeSection} from '../components/index';
+import {Layout, ResumeSection, ContactForm} from '../components/index';
 import {markdownify, htmlToReact, Link} from '../utils';
 
 export default class Resume extends React.Component {
@@ -23,7 +23,7 @@ export default class Resume extends React.Component {
                     </section>
                     <section className={'wrapper ' + get(this.props, 'pageContext.frontmatter.background_style')}>
                         <div className="inner">
-                            {htmlToReact(get(this.props, 'pageContext.html'))}
+                            <ContactForm />
                         </div>
                     </section>
                 </article>
