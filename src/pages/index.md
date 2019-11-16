@@ -107,6 +107,9 @@ sections:
       fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
     title: Accumsan mus tortor nunc aliquet
     type: features
+  - background_style: style2
+    component: ContactForm
+    section_id: contact-form
   - actions:
       - is_primary: true
         is_scrolly: false

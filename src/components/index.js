@@ -7,6 +7,7 @@ import Icons from './Icons';
 import Spotlights from './Spotlights';
 import Layout from './Layout';
 import ResumeSection from './ResumeSection';
+import ContactForm from './ContactForm';
 
 export {
     Banner,
@@ -17,7 +18,8 @@ export {
     Icons,
     Spotlights,
     Layout,
-    ResumeSection
+    ResumeSection,
+    ContactForm
 };
 
 export default {
@@ -29,5 +31,6 @@ export default {
     Icons,
     Spotlights,
     Layout,
-    ResumeSection
+    ResumeSection,
+    ContactForm
 };
