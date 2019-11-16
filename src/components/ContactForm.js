@@ -12,15 +12,22 @@ const ContactForm = props => {
                     <header style={{ textAlign: 'center' }}>
                         <h2>Contact Me</h2>
                     </header>
-                    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <form
+                        name="contact"
+                        method="post"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                    >
+                        <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" value="contact" />
                         <p>
-                            <label>Your Name: <input type="text" name="name" /></label>   
+                            <label>Your Name: <input type="text" name="name" id="name" /></label>   
                         </p>
                         <p>
-                            <label>Your Email: <input type="email" name="email" /></label>
+                            <label>Your Email: <input type="email" name="email" id="email" /></label>
                         </p>
                         <p>
-                            <label>Message: <textarea name="message"></textarea></label>
+                            <label>Message: <textarea name="message" id="message"></textarea></label>
                         </p>
                         <p>
                             <button type="submit">Send</button>
