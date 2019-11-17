@@ -127,6 +127,8 @@ sections:
       eleifend fringilla.
     title: Arcue ut vel commodo
     type: cta
+  - component: MailchimpSubscribe
+    section_id: mailchimp-subscribe
 template: home
 ---
 

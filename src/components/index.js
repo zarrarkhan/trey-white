@@ -8,6 +8,7 @@ import Spotlights from './Spotlights';
 import Layout from './Layout';
 import ResumeSection from './ResumeSection';
 import ContactForm from './ContactForm';
+import MailchimpSubscribe from './MailchimpSubscribe';
 
 export {
     Banner,
@@ -19,7 +20,8 @@ export {
     Spotlights,
     Layout,
     ResumeSection,
-    ContactForm
+    ContactForm,
+    MailchimpSubscribe
 };
 
 export default {
@@ -32,5 +34,6 @@ export default {
     Spotlights,
     Layout,
     ResumeSection,
-    ContactForm
+    ContactForm,
+    MailchimpSubscribe
 };
