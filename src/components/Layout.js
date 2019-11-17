@@ -14,6 +14,7 @@ export default class Body extends React.Component {
                     <title>{_.get(this.props, 'pageContext.frontmatter.title') && _.get(this.props, 'pageContext.frontmatter.title') + ' - '}{_.get(this.props, 'pageContext.site.siteMetadata.title')}</title>
                     <meta charSet="utf-8" />
                     <link rel="stylesheet" href={safePrefix('assets/css/main.css')} />
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"></link>
                     <meta name="viewport" content="width=device-width, initialScale=1, userScalable=no" />
                     <noscript>{`<link rel="stylesheet" href=${safePrefix('assets/css/noscript.css')} />`}</noscript>
                     <body className={((_.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')) ? 'landing ' : '')} />
