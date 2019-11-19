@@ -7,10 +7,12 @@ menus:
     title: Resume
     weight: 1
 sections:
-  - header: Education
+  - level: 1
+    header: Education
     subsections:
-      - subheader: Virginia Tech
-        rightSubheader: Blacksburg, VA
+      - level: 2
+        header: Virginia Tech
+        rightHeader: Blacksburg, VA
         items:
           - text: Bachelor of Science in Business Information Technology
             subtext: Fall 2010 - Spring 2014
@@ -22,10 +24,12 @@ sections:
           - text: Undergraduate Research - Text Analytics for Stock Pitch Accuracy Assessment
             subtext: |-
               Spring 2013 - Created web scrapers to retrieve historical stock pitch assessments from [The Motley Fool](https://www.fool.com/). Then, created python application implementing NumPy, NLP, and NLTK to determine if positive or negative verbiage used in stock pitches were linked to accurate predictions.
-  - header: Work Experience
+  - level: 1
+    header: Work Experience
     subsections:
-      - subheader: RealNumberz, LLC
-        rightSubheader: Richmond, VA / Remote
+      - level: 2
+        header: RealNumberz, LLC
+        rightHeader: Richmond, VA / Remote
         position: CTO, Co-Founder
         dates: December 2018 - Ongoing
         descriptionSummary: Designed, developed, tested, deployed, and maintained a progressive web application
@@ -34,8 +38,9 @@ sections:
           - text: NIH, Office of Science Policy
           - text: Treasury, OFAC
           - text: DHS
-      - subheader: Deloitte, LLP
-        rightSubheader: Washington, DC
+      - level: 2
+        header: Deloitte, LLP
+        rightHeader: Washington, DC
         items:
           - text: NIH, Office of Science Policy
           - text: Treasury, OFAC
