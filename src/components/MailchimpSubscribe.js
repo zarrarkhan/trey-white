@@ -19,10 +19,10 @@ const MailchimpSubscribe = () => {
                         name="mc-embedded-subscribe-form"
                         className="validate"
                         target="_blank"
-                        novalidate
+                        noValidate
                     >
                         <div id="mc_embed_signup_scroll">
-                            <label for="mce-EMAIL">Subscribe</label>
+                            <label htmlFor="mce-EMAIL">Subscribe</label>
                             <input
                                 type="email"
                                 value={email}
@@ -35,12 +35,12 @@ const MailchimpSubscribe = () => {
                             />
                             {htmlToReact('<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->')}
                             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                                <input type="text" name="b_c621dc97d8202578e9db94c21_527355670a" tabindex="-1" value="" />
+                                <input type="text" name="b_c621dc97d8202578e9db94c21_527355670a" tabIndex="-1" defaultValue="" />
                             </div>
                             <div className="clear">
                                 <input
                                     type="submit"
-                                    value="Subscribe"
+                                    defaultValue="Subscribe"
                                     name="subscribe"
                                     id="mc-embedded-subscribe"
                                     className="button fit"
