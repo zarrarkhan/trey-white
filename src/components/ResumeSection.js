@@ -9,7 +9,9 @@ const sectionHeader = section => {
     switch (level) {
         case 1:
             return (<header><h2>{get(section, 'header')}</h2></header>);
+        
         case 2:
+        case 3:
             return (
                 <p>
                     <strong>{get(section, 'header')}</strong>
@@ -77,7 +79,12 @@ const sectionContent = section => (
 );
 
 const formatSection = section => (
-    <div id={get(section, 'header')}>
+    <div
+        id={get(section, 'header')}
+        style={section.level === 3 ? {
+            margin: '1em 0 0 1em'
+        } : {}}
+    >
         {sectionHeader(section)}
         {get(section, 'items') && (
             sectionContent(section)
