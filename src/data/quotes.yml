@@ -1,22 +1,27 @@
 items:
-  - text: >-
-      The purpose of life is not to be happy. It is to be useful, to be honorable, to be
-      compassionate, to have it make some difference that you have lived and lived well.
-    author: Ralph Waldo Emerson
-  - text: >-
-      If you don’t make mistakes, you’re not working on hard enough problems. And that’s 
-      a big mistake.
-    author: Frank Wilczek
-  - text: I’ve learned that nothing is impossible and almost nothing is easy.
-    author: Articulo 31
-  - text: >-
-      Remembering that you are going to die is the best way to avoid the trap of thinking 
-      that you have something to lose.
-    author: Steve Jobs
-  - text: What you are shouts so loudly in my ear that I cannot hear what you say.
-    author: Ralph Waldo Emerson
-  - text: >-
-      No one can persuade another to change. Each of us guards a gate of change that can 
-      only be opened from the inside. We cannot open the gate of another, either by argument or 
-      emotional appeal.
-    author: Marilyn Ferguson
+  - author: Ralph Waldo Emerson
+    text: >-
+      The purpose of life is not to be happy. It is to be useful, to be
+      honorable, to be compassionate, to have it make some difference that you
+      have lived and lived well.
+  - author: Frank Wilczek
+    text: >-
+      If you don’t make mistakes, you’re not working on hard enough problems.
+      And that’s  a big mistake.
+  - author: Articulo 31
+    text: I’ve learned that nothing is impossible and almost nothing is easy.
+  - author: Steve Jobs
+    text: >-
+      Remembering that you are going to die is the best way to avoid the trap of
+      thinking  that you have something to lose.
+  - author: Ralph Waldo Emerson
+    text: What you are shouts so loudly in my ear that I cannot hear what you say.
+  - author: Marilyn Ferguson
+    text: >-
+      No one can persuade another to change. Each of us guards a gate of change
+      that can  only be opened from the inside. We cannot open the gate of
+      another, either by argument or  emotional appeal.
+  - author: Aristotle
+    text: >-
+      We are what we repeatedly do. Excellence, then, is not an act, but a
+      habit.
