@@ -9,6 +9,7 @@ import Layout from './Layout';
 import ResumeSection from './ResumeSection';
 import ContactForm from './ContactForm';
 import MailchimpSubscribe from './MailchimpSubscribe';
+import QuoteCarousel from './QuoteCarousel';
 
 export {
     Banner,
@@ -21,7 +22,8 @@ export {
     Layout,
     ResumeSection,
     ContactForm,
-    MailchimpSubscribe
+    MailchimpSubscribe,
+    QuoteCarousel,
 };
 
 export default {
@@ -35,5 +37,6 @@ export default {
     Layout,
     ResumeSection,
     ContactForm,
-    MailchimpSubscribe
+    MailchimpSubscribe,
+    QuoteCarousel,
 };

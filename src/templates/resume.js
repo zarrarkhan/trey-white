@@ -3,7 +3,7 @@ import get from 'lodash/get';
 import map from 'lodash/map';
 
 import {Layout, ResumeSection, ContactForm} from '../components/index';
-import {markdownify, htmlToReact, Link} from '../utils';
+import {markdownify} from '../utils';
 
 export default class Resume extends React.Component {
     render() {

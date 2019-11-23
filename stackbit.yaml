@@ -85,6 +85,29 @@ models:
               name: url
               label: Button URL
               widget: url
+  quotes:
+    type: data
+    file: quotes.yml
+    label: Quotes Configuration
+    fields:
+      - type: list
+        name: items
+        label: Individual Quotes
+        description: A list of impactful quotes to be displayed in a sliding carousel
+        items:
+          type: object
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Quote Text
+              required: true
+              description: Text of the quote
+            - type: string
+              name: author
+              label: Author Name
+              required: true
+              description: Author of the quote
   footer:
     type: data
     file: footer.yml

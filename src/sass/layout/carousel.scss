@@ -1,0 +1,44 @@
+/* Carousel */
+
+#quote-carousel {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    height: 20em;
+
+    .panel {
+        height: 20em;
+        display: table!important;
+    }
+
+    .quote {
+        @include padding(2em, 10em);
+        max-width: 48em;
+        height: 100%;
+        vertical-align: middle;
+        display: table-cell!important;
+        text-align: center;
+    }
+
+    @include breakpoint('<=large') {
+        .quote {
+            @include padding(2em, 6em);
+        }
+    }
+
+    @include breakpoint('<=medium') {
+        .quote {
+            @include padding(4em, 3em);
+            max-width: none;
+            text-align: center;
+        }
+    }
+
+    @include breakpoint('<=small') {
+        .quote {
+            @include padding(3em, 2em);
+        }
+    }
+}

@@ -56,6 +56,29 @@ collections:
                 name: url
                 label: Button URL
                 required: false
+  - name: quotes
+    label: Quotes Configuration
+    files:
+      - name: quotes
+        label: Quote Configuration
+        file: src/data/quotes.yml
+        fields:
+          - widget: list
+            name: items
+            label: Individual Quotes
+            required: false
+            hint: A list of impactful quotes to be displayed in a sliding carousel
+            fields:
+              - widget: string
+                name: text
+                label: Quote Text
+                required: true
+                hint: Text of the quote
+              - widget: string
+                name: author
+                label: Author Name
+                required: true
+                hint: Author of the quote
   - name: footer
     label: Footer Configuration
     files:

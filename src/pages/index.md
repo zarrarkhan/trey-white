@@ -5,7 +5,7 @@ banner:
     - is_primary: true
       is_scrolly: false
       label: Resume
-      url: https://res.cloudinary.com/realnumberz/image/upload/v1573783055/uploads/Paul_White_-_Resume_v6.pdf
+      url: /resume
       download: true
       target: _blank
   bottom_link:
@@ -39,6 +39,9 @@ sections:
       Arcu aliquet vel lobortis ata nisl
       eget augue amet aliquet nisl cep donec
     type: icons
+  - background_style: style2
+    component: QuoteCarousel
+    section_id: quote-carousel
   - background_style: style2
     component: Spotlights
     section_id: two
