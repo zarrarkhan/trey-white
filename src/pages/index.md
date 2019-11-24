@@ -6,8 +6,10 @@ banner:
       is_scrolly: false
       label: Resume
       url: /resume
-      download: true
-      target: _blank
+    - is_primary: false
+      is_scrolly: true
+      label: Contact
+      url: '#contact-form'
   bottom_link:
     has_arrow: true
     is_scrolly: true
@@ -113,25 +115,12 @@ sections:
   - background_style: style2
     component: ContactForm
     section_id: contact-form
-  - actions:
-      - is_primary: true
-        is_scrolly: false
-        label: Activate
-        url: /generic
-      - is_primary: false
-        is_scrolly: false
-        label: Learn More
-        url: /generic
-    background_style: style4
-    component: Cta
-    section_id: cta
-    text: >-
-      Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-      eleifend fringilla.
-    title: Arcue ut vel commodo
-    type: cta
-  - component: MailchimpSubscribe
+  - background_style: style4
+    component: MailchimpSubscribe
     section_id: mailchimp-subscribe
+    text: >-
+      Enter the code given to you by Trey and click Submit to access the mailing list subscription.
+    title: Mailing List
 template: home
 ---
 
