@@ -4,6 +4,8 @@ import get from 'lodash/get';
 import map from 'lodash/map';
 import shuffle from 'lodash/shuffle';
 
+import {Link, safePrefix} from '../utils';
+
 // Import CSS files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -34,6 +36,9 @@ const QuoteCarousel = props => {
                         </div>
                     ))}
                 </Slider>
+                <div>
+                    <Link to={(safePrefix('/quotes'))}>View All Quotes</Link>
+                </div>
             </div>
         </section>
     );

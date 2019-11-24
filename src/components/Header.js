@@ -8,7 +8,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="header" className={classNames({'alt': get(this.props, 'pageContext.frontmatter.template') === 'home'})}>
-                <h1><Link to={safePrefix('/')}>{get(this.props, 'pageContext.site.siteMetadata.title')}</Link></h1>
+                <h1><Link to="/">{get(this.props, 'pageContext.site.siteMetadata.title')}</Link></h1>
                 <nav id="nav" className="mobile-menu">
                     <ul>
                         <li className="special">

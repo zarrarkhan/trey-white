@@ -9,10 +9,8 @@ dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
 metadata:
-  title: Spectral
-  description: a multipage theme
-  author: Pixelarity
-  authorURL: 'https://pixelarity.com'
+  title: Trey White
+  description: Full-Stack Developer
   palettes:
     blue:
       images:

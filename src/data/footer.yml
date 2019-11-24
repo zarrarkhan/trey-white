@@ -1,21 +1,17 @@
 social_icons:
-  - title: Twitter
-    icon: fa-twitter
-    url: '#'
+  - title: GitHub
+    icon: fa-github
+    url: 'https://github.com/treywhite21'
+  - title: Medium
+    icon: fa-medium
+    url: 'https://medium.com/@treywhitedesign'
+  - title: LinkedIn
+    icon: fa-linkedin
+    url: 'https://www.linkedin.com/in/whitepr'
   - title: Facebook
     icon: fa-facebook
-    url: '#'
-  - title: Instagram
-    icon: fa-instagram
-    url: '#'
-  - title: Dribbble
-    icon: fa-dribbble
-    url: '#'
+    url: 'https://www.facebook.com/treywhite21'
   - title: Email
     icon: fa-envelope-o
-    url: '#'
-copyright: '&copy; Spectral'
-links:
-  - text: Made with Stackbit
-    url: 'https://www.stackbit.com'
-    new_window: true
+    url: 'mailto:treywhite21@gmail.com'
+copyright: '&copy; 2019 Trey White. All rights reserved.'
