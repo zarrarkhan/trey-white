@@ -15,31 +15,42 @@ banner:
     is_scrolly: true
     label: Learn More
     url: '#one'
-  subtitle: Full-stack web developer
+  subtitle: Full-stack web app developer
   title: Trey White
 sections:
-  - background_style: style1
+  - background_style: style2
     component: Icons
     feature_icons:
-      - icon: fa-diamond
-        style: style1
-        title: Lorem
-      - icon: fa-heart-o
-        style: style2
-        title: Ipsum
       - icon: fa-code
+        style: style1
+        title: Programming
+      - icon: fa-laptop
+        style: style2
+        title: Laptop
+      - icon: fa-code-fork
         style: style3
-        title: Dolor
+        title: Source Code Management
+    feature_images:
+      - img_path: images/rnz/macbook.png
+        height: 20em
+        delay: 4000
+      - img_path: images/rnz/ipad.png
+        height: 19em
+        top: 1em
+        margin: -5em
+        delay: 1000
+      - img_path: images/rnz/iphone.png
+        height: 15em
+        top: 5em
+        margin: -18em
+        delay: 2000
     section_id: one
-    subtitle: >-
-      Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-      eleifend  
-
-      fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-      ullamcorper.  
+    subtitle: |-
+      I love seeing things come to life instantaneously
+      and building things that make peoples' lives better
     title: |-
-      Arcu aliquet vel lobortis ata nisl
-      eget augue amet aliquet nisl cep donec
+      My passion and vehicle is
+      full-stack web app development
     type: icons
   - background_style: style2
     component: QuoteCarousel
