@@ -30,42 +30,46 @@ sections:
       - icon: fa-code-fork
         style: style3
         title: Source Code Management
+    section_link:
+      text: Visit RealNumberz
+      url: https://www.realnumberz.com
     feature_images:
       - img_path: images/rnz/macbook.png
+        css_id: macbook-mockup
         height: 20em
-        delay: 4000
       - img_path: images/rnz/ipad.png
-        height: 19em
-        top: 1em
-        margin: -5em
+        css_id: ipad-mockup
         delay: 1000
       - img_path: images/rnz/iphone.png
-        height: 15em
-        top: 5em
-        margin: -18em
+        css_id: iphone-mockup
         delay: 2000
     section_id: one
     subtitle: |-
-      I love seeing things come to life instantaneously
-      and building things that make peoples' lives better
+      I love making ideas come to life instantaneously
+      and building things that make peoples' lives better.
+      The interactivity and portability of progressive web applications
+      enables this possibility.
     title: |-
       My passion and vehicle is
       full-stack web app development
     type: icons
   - background_style: style2
-    component: QuoteCarousel
-    section_id: quote-carousel
-  - background_style: style2
     component: Spotlights
     section_id: two
     spotlights:
-      - home_img_path: images/pic01.jpg
+      - home_img_path: images/home/t-kelly-films.png
         text: >-
-          Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-          imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          Sometimes an app isn't necessary. I view web design as my artform that
+          has both form and function. Custom WordPress development allows me 
+          to build and deploy sites that the average person can maintain.
         title: |-
-          Magna primis lobortis
-          sed ullamcorper
+          I also enjoy helping people reach out to the world
+        link:
+          url: http://tkellyfilms.com/
+          text: >-
+            If you want to see the world from your computer or phone
+            and you're okay with instant jealousy, visit a site I made for a friend
+          title: T. Kelly Films
       - home_img_path: images/pic02.jpg
         text: >-
           Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -82,6 +86,9 @@ sections:
           sed condimentum
     title: Spotlights Section
     type: spotlights
+  - background_style: style2
+    component: QuoteCarousel
+    section_id: quote-carousel
   - background_style: style3
     component: Features
     features:

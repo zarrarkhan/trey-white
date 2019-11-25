@@ -44,7 +44,7 @@ const sectionHeader = section => {
 };
 
 const expandableBullet = (item, item_idx) => (
-    <details key={item_idx}>
+    <details key={`expadable-bullet-${item_idx}`}>
         <summary>
             <span>{item.text}</span>
             {get(item, 'rightText') && (
@@ -58,7 +58,7 @@ const expandableBullet = (item, item_idx) => (
 );
 
 const plainBullet = (item, item_idx) => (
-    <li key={item_idx}>
+    <li key={`plain-bullet-${item_idx}`}>
         <span>{markdownify(item.text)}</span>
         {get(item, 'rightText') && (
             <span className="col-5 align-right">{item.rightText}</span>
@@ -81,6 +81,7 @@ const sectionContent = section => (
 const formatSection = section => (
     <div
         id={get(section, 'header')}
+        key={get(section, 'header')}
         style={section.level === 3 ? {
             margin: '1em 0 0 1em'
         } : {}}

@@ -1,24 +1,39 @@
 import React from 'react';
-import _ from 'lodash';
+import get from 'lodash/get';
+import map from 'lodash/map';
 
 import {safePrefix, htmlToReact, markdownify} from '../utils';
 
-export default class Spotlights extends React.Component {
-    render() {
-        return (
-            <section id={_.get(this.props, 'section.section_id')} className={'wrapper alt ' + _.get(this.props, 'section.background_style')}>
-                {_.map(_.get(this.props, 'section.spotlights'), (spotlight, spotlight_idx) => (
-                    <section key={spotlight_idx} className="spotlight">
-                        {_.get(spotlight, 'home_img_path') && 
-                            <div className="image"><img src={safePrefix(_.get(spotlight, 'home_img_path'))} alt="" /></div>
-                        }
-                        <div className="content">
-                            <h2>{htmlToReact(_.get(spotlight, 'title').replace(/\n/g, '<br />'))}</h2>
-                            {markdownify(_.get(spotlight, 'text'))}
-                        </div>
-                    </section>
-                ))}
-            </section>
-        );
-    }
+const Spotlights = props => {
+    return (
+        <section id={get(props, 'section.section_id')} className={'wrapper alt ' + get(props, 'section.background_style')}>
+            {map(get(props, 'section.spotlights'), (spotlight, spotlight_idx) => (
+                <section key={spotlight_idx} className="spotlight">
+                    {get(spotlight, 'home_img_path') && 
+                        <div className="image"><img src={safePrefix(get(spotlight, 'home_img_path'))} alt="" /></div>
+                    }
+                    <div className="content" style={{ padding: '1em 4em' }}>
+                        <h2>{htmlToReact(get(spotlight, 'title').replace(/\n/g, '<br />'))}</h2>
+                        {markdownify(get(spotlight, 'text'))}
+                        {get(spotlight, 'link') && (
+                            <span>
+                                {get(spotlight, 'link.text')}
+                                <a
+                                    href={get(spotlight, 'link.url')}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ marginLeft: '4px' }}
+                                >
+                                    {get(spotlight, 'link.title')}
+                                </a>
+                                .
+                            </span>
+                        )}
+                    </div>
+                </section>
+            ))}
+        </section>
+    );
 }
+
+export default Spotlights;

@@ -8,6 +8,7 @@ import {htmlToReact, markdownify, safePrefix} from '../utils';
 const Icons = props => {
     const images = get(props, 'section.feature_images');
     const icons = get(props, 'section.feature_icons');
+    const link = get(props, 'section.section_link');
     return (
         <section id={get(props, 'section.section_id')} className={'wrapper ' + get(props, 'section.background_style') + ' special'}>
             <div className="inner">
@@ -20,17 +21,19 @@ const Icons = props => {
                         <Zoom key={image_idx} delay={get(image, 'delay')}>
                             <div className="image">
                                 <img
-                                    style={{
-                                        height: `${get(image, 'height')}`,
-                                        width: 'auto',
-                                        top: `${get(image, 'top')}`,
-                                        marginLeft: `${get(image, 'margin')}`,
-                                    }}
+                                    id={get(image, 'css_id')}
                                     src={safePrefix(get(image, 'img_path'))}
                                 />
                             </div>
                         </Zoom>
                     ))
+                )}
+                {link && (
+                    <div>
+                        <a href={get(link, 'url')} target="_blank" rel="noopener noreferrer">
+                            {get(link, 'text')}
+                        </a>
+                    </div>
                 )}
                 {icons && (
                     <ul className="icons major" style={{ paddingTop: '4em' }}>
