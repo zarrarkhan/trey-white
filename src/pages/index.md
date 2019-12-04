@@ -49,6 +49,10 @@ sections:
       and building things that make peoples' lives better.
       The interactivity and portability of progressive web applications
       enables this possibility.
+
+      My current project, RealNumberz, is a PWA that I built for passive
+      real estate investors to track, manage, and analyze their portfolio
+      and underlying assets at-a-glance from anywhere in the world.
     title: |-
       My passion and vehicle is
       full-stack web app development
@@ -70,20 +74,35 @@ sections:
             If you want to see the world from your computer or phone
             and you're okay with instant jealousy, visit a site I made for a friend
           title: T. Kelly Films
-      - home_img_path: images/pic02.jpg
+      - home_img_path: images/home/quote-carousel-code.png
         text: >-
-          Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-          imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          I believe in the old "teach a man to fish" adage but, more importantly, I
+          believe in giving back what I've been given. I've learned a lot
+          over many years and from many different sources, so I aim to distill that
+          information for prospective programmers.
         title: |-
-          Tortor dolore feugiat
-          elementum magna
-      - home_img_path: images/pic03.jpg
+          And sharing the knowledge I've been given
+        link:
+          url: /blog
+          text: >-
+            If you want to build, deploy, and customize a React App like this one, learn
+            how in my
+          title: blog
+      - home_img_path: images/home/tvm-calc-npm-readme.png
         text: >-
-          Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-          imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          Open source code has made what I've accomplished possible. The work of complete
+          strangers has enabled me to create applications and components that I, likely,
+          wouldn't have been able to with my limited time. Wherever possible, I try to
+          identify opportunities and share code in hopes that I can make the programming
+          experience a little easier and a little better for someone out there.
         title: |-
-          Augue eleifend aliquet
-          sed condimentum
+          And, when possible, sharing the code itself
+        link:
+          url: https://www.npmjs.com/package/tvm-calculator
+          text: >-
+            You can see an example of this in my NPM package that brings financial
+            calculator functions to JavaScript programs at
+          title: tvm-calculator
     title: Spotlights Section
     type: spotlights
   - background_style: style2
