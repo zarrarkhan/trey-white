@@ -1,7 +1,9 @@
 actions:
   - label: RealNumberz
     url: https://www.realnumberz.com/
-  - label: Sign Up
-    url: /generic
-  - label: Log In
-    url: /generic
+  - label: Blog
+    url: /blog
+  # - label: Sign Up
+  #   url: /generic
+  # - label: Log In
+  #   url: /generic
