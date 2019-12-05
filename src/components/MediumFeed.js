@@ -1,13 +1,15 @@
 import React from 'react';
-import Feed from 'rss-to-json';
+import axios from 'axios';
 import get from 'lodash/get';
 import map from 'lodash/map';
 
+import {htmlToReact} from '../utils';
+
 const formatArticle = (article, idx) => (
-	<div key={`article-${idx}`}>
+	<div key={`article-${idx}`} className="col-10">
 		<h3>{get(article, 'title')}</h3>
 		<h6>{get(article, 'pubDate')}</h6>
-		<p>{get(article, 'content')}</p>
+		<p>{htmlToReact(get(article, 'content'))}</p>
 		<span>View full article <a href={get(article, 'link')} target="_blank">here</a></span>
 		<hr />
 	</div>
@@ -16,22 +18,45 @@ const formatArticle = (article, idx) => (
 export default class MediumFeed extends React.Component {
 	constructor() {
 		super();
-		this.feedData = null;
+
+		this.state = {
+			isLoading: true,
+			articles: [],
+			error: null,
+		};
 	}
 
-	componentWillMount() {
-		// Ex. https://learnstartup.net/feed/
-		Feed.load('https://medium.com/feed/@treywhitedesign', (err, rss) => {
-			if (err) {
-				console.log('Error loading RSS feed: ', JSON.stringify(err));
-			} else {
-				console.log(rss);
-				this.feedData = rss;
-			}
-		});
+	getMediumFeed = () => {
+		const mediumRssFeed = 'https://medium.com/feed/@treywhitedesign';
+		const rssToJsonApi = 'https://api.rss2json.com/v1/api.json';
+		const data = { params: { rss_url: mediumRssFeed } };
+		
+		axios.get(rssToJsonApi, data)
+		.then(data =>
+			this.setState({
+				articles: get(data, 'data.items') || [],
+				isLoading: false,
+			})
+		)
+		.catch(error => this.setState({ error, isLoading: false }));
+	};
+
+	componentDidMount() {
+		this.getMediumFeed();
 	}
 
 	render() {
-		return map(get(this.feedData, 'items'), (article, idx) => formatArticle(article, idx));
+		const { isLoading, articles, error } = this.state;
+		
+		return (
+			<div className="row aln-center">
+				{error ? <p className="error">{error.message}</p> : null}
+				{!isLoading ? (
+					map(articles, (article, idx) => formatArticle(article, idx))
+				) : (
+					<h3>Loading...</h3>
+				)}
+			</div>
+		);
 	}
 }
