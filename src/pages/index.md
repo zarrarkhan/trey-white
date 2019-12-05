@@ -113,41 +113,41 @@ sections:
     features:
       - icon: fa-paper-plane-o
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Arcu accumsan
+          I'm a huge stand-up fan whether Netflix or in-person. My favorite comedians are
+          Brian Regan, Nate Bargatze, Dan Soder, Todd Barry, Kumail Nanjiani, Dimitri Martin,
+          Dave Chapelle, John Mulaney, and Hannibal Burress. 
+        title: Stand-Up Comedy
       - icon: fa-laptop
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Ac Augue Eget
+          I love dogs more than humans. I've grown up with golden retrievers. We currently have
+          three, and I dogsit/walk others' dogs using the Rover app.
+        title: Dogs
       - icon: fa-code
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Mus Scelerisque
+          I enjoy art which is difficult to say without sounding pretentious, so I'll clarify&#58;
+          I can appreciate artwork in the Louvre, but I truly enjoy Banksy, some street artist I
+          saw in the Bahamas ten years ago, and many tattooists (though I have none myself).
+        title: Art
       - icon: fa-headphones
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Mauris Imperdiet
+          Though vague and possibly more cliche than my love for dogs, I like the water. I grew up
+          spending much of my time on/in the Potomac river between Virginia and Maryland trying to
+          jump boat wakes on an old SeaDoo.
+        title: Water
       - icon: fa-heart-o
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Aenean Primis
+          I was captain of my high school's lacrosse team and it will always be my first love...
+          but I hung up my cleats and keep my head out of the glory days now by playing tennis
+          or yelling at the TV while watching my fantasy football teams.
+        title: Sports
       - icon: fa-flag-o
         text: >-
-          Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-          tincidunt nullam amet leo Aenean ligula consequat consequat.
-        title: Tortor Ut
+          A more recent interest of mine over the past couple of years has been focused personal development which has been fueled by Audible and Medium. I send chapter summaries and commentary in weekday emails which I plan to post for the public at some point.
+        title: Personal Development
     section_id: three
     subtitle: >-
-      Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-      eleifend  
-
-      fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
-    title: Accumsan mus tortor nunc aliquet
+      Believe it or not, I do enjoy things outside of computers and the internet! 
+    title: Finally, some non-technology stuff
     type: features
   - background_style: style2
     component: ContactForm
