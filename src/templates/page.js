@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import {Layout} from '../components/index';
+import {Layout, MediumFeed} from '../components/index';
 import {markdownify, htmlToReact} from '../utils';
 
 export default class Page extends React.Component {
@@ -15,6 +15,7 @@ export default class Page extends React.Component {
                     </header>
                     <section className={'wrapper ' + _.get(this.props, 'pageContext.frontmatter.background_style')}>
                         <div className="inner">
+                            <MediumFeed />
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
                         </div>
                     </section>

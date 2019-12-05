@@ -10,6 +10,7 @@ import ResumeSection from './ResumeSection';
 import ContactForm from './ContactForm';
 import MailchimpSubscribe from './MailchimpSubscribe';
 import QuoteCarousel from './QuoteCarousel';
+import MediumFeed from './MediumFeed';
 
 export {
     Banner,
@@ -24,6 +25,7 @@ export {
     ContactForm,
     MailchimpSubscribe,
     QuoteCarousel,
+    MediumFeed,
 };
 
 export default {
@@ -39,4 +41,5 @@ export default {
     ContactForm,
     MailchimpSubscribe,
     QuoteCarousel,
+    MediumFeed,
 };
